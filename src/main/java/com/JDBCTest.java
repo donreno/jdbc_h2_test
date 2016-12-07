@@ -26,8 +26,6 @@ public class JDBCTest {
                 statement.execute(CREATE_TABLE);
                 statement.execute(insertData("person1", 13));
                 statement.execute(insertData("person2", 25));
-                statement.execute(insertData("person3", 44));
-                statement.execute(insertData("person4", 10));
             }
 
             try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FROM_TABLE)) {
